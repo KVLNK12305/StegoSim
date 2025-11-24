@@ -1,3 +1,7 @@
+# ==========================
+# Node / React
+# ==========================
+
 # Node modules
 /node_modules
 /.pnp
@@ -22,16 +26,6 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 
-# Editor directories and files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS files
-.DS_Store
-Thumbs.db
-
 # Cache
 /.cache
 /.parcel-cache
@@ -43,5 +37,63 @@ Thumbs.db
 # Misc
 *.tsbuildinfo
 *.log
+
+# ==========================
+# Rust
+# ==========================
+
+# Cargo build outputs
+/target
+
+# Rust debug files
+**/*.rs.bk
+
+# Rust environment variables
+.env
+
+# ==========================
+# Go
+# ==========================
+
+# Go build outputs
+/bin/
+/obj/
+/out/
+
+# Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Vendor folder
+/vendor/
+
+# ==========================
+# Editor & OS
+# ==========================
+
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Testing / Coverage
+# ==========================
 coverage/
+*.prof
 *.tgz
