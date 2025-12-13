@@ -2,6 +2,7 @@ import { useState } from 'react';
 import TerminalTab from './components/TerminalTab';
 import Sidebar from './components/Sidebar';
 import Trap from './components/Trap';
+import GrimoireBot from './components/GrimoireBot'; // <--- 1. Import the Bot
 import { Plus, X, Monitor, Skull } from 'lucide-react';
 
 function App() {
@@ -30,10 +31,13 @@ function App() {
       {/* 1. Trap Overlay */}
       <Trap active={trapActive} onReset={() => setTrapActive(false)} />
 
-      {/* 2. Sidebar (Left Panel) */}
+      {/* 2. The Grimoire Guide (Floating Bot) */}
+      <GrimoireBot /> {/* <--- 2. Add the Component here */}
+
+      {/* 3. Sidebar (Left Panel) */}
       <Sidebar />
 
-      {/* 3. Main Content (Right Panel) */}
+      {/* 4. Main Content (Right Panel) */}
       <div className="flex-1 flex flex-col min-w-0 bg-black">
         
         {/* Top Navigation Bar */}
